@@ -15,7 +15,7 @@ with open('config.json') as f:
     config = json.load(f)
     token = os.getenv('TOKEN')
 
-bot = commands.Bot('.', description='discord.gg/desperate', self_bot=True)
+bot = commands.Bot('.', description='hill', self_bot=True)
 
 
 def clear():
@@ -37,7 +37,7 @@ def init():
 async def ready():
     await bot.wait_until_ready()
 
-    statuses = ["@slitmythroat", "https://fraud.gay", "/expect", "/desperate", "/stam", "⛧", "egoist", "????", "♱", "kys", "bloody", "✡"] # change these lol.
+    statuses = ["᲼᲼", "x"] # change these lol.
 
     while not bot.is_closed():
         status = random.choice(statuses)
